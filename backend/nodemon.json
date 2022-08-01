@@ -1,0 +1,7 @@
+{
+    "env" : {
+        "MONGO_USER" : "yatharth",
+        "MONGO_PASSWORD" : "Micro106",
+        "MONGO_DEFAULT_DATABASE" : "onboardproject"
+    }
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mera App</title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <div class="main-content">
+            {{>header}}
+
+            <div id="slots">
+                <h3>Do you want to delete your current slot?</h3>
+                <button type="submit" id="delete">CONFIRM</button>
+            </div>
+
+            <p id="value" style="font-weight: bold;"></p>
+            <a href="http://localhost:2000/interviewerslot/interviewerLanding"><button type="submit" id="cancel">BACK</button></a>
+        </div>
+        {{>footer}}
+    </body>
+        <script src="/js/interviewer/deleteSlot.js"></script>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mera App</title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <div class="main-content">
+            {{>header}}
+            <div id="vanish">
+                <form action="">
+                    <label for="">Start Time</label>
+                    <br>
+                    <input type="date" name="" id="start_date_input">
+                    <input type="time" name="" id="start_time_input">
+                    <br>
+                    <label for="">End Time</label>
+                    <br>
+                    <input type="date" name="" id="end_date_input">
+                    <input type="time" name="" id="end_time_input">
+                    <br><br>
+                    <button type="submit">SUBMIT</button>
+                    <br><br>
+                </form>
+            </div>
+            <p id="populateData"></p>
+            <a href="http://localhost:2000/interviewerslot/interviewerLanding"><button>BACK</button></a>
+        </div>
+        {{>footer}}
+        {{!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> --}}
+        <script src="/js/interviewer/updateSlot.js"></script>
+    </body>
+</html>

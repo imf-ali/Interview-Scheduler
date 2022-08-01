@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mera App</title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <div class="main-content">
+        {{>header}}
+        <h2>Candidates List</h2>
+
+        <ul>
+            {{#each candidates}}
+            <li>
+                <div class="row">
+                <label for="" style="font-weight: bolder;">NAME: </label>{{name}}
+                <br>
+                <label for="" style="font-weight: bolder;">EMAIL: </label>{{email}}
+                <br>
+                <label for="" style="font-weight: bolder;">STATUS: </label>{{status}}
+                <br>
+                <label for="" style="font-weight: bolder;">AVAILABLE SLOTS: </label>
+                <br>
+
+                <ol>
+                    {{#each availablility_slots}}
+                    <li>
+                        <label for="" style="font-weight: bold;">Start Time: </label>
+                        {{starttime}} 
+                        <br>
+                        <label for="" style="font-weight: bold;">End Time: </label>
+                        {{endtime}}
+                        <br>
+                    </li>
+                    {{/each}}
+                </ol>
+                <br>
+                <a href="/candidate/candidateAvailability/{{_id}}"><button>Update Slots</button></a>
+                <a href="/candidate/candidateJourney/{{_id}}"><button>View Journey</button></a>
+                <a href="/candidate/interviewSchedule/{{_id}}"><button>Get Schedule</button></a>
+                <a href="/candidate/resume/{{_id}}"><button>Download Resume</button></a>
+                </div>
+                <br>
+                <br>
+            </li>
+            {{/each}}
+        </ul>
+            <br>
+            <a href="http://localhost:2000/user/ta_landing"><button type="submit">BACK</button></a>
+        </div>
+        {{>footer}}
+    </body>
+    <script src="/js/candidates/allCandidates.js"></script>
+</html>

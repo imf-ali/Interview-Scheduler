@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mera App</title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <div class="main-content">
+            {{>header}}
+            <h2>{{message}}</h2>
+            <label for="" style="font-weight: bolder;">NAME         : </label>{{info.name}}
+            <br>
+            <label for="" style="font-weight: bolder;">EMAIL        : </label>{{info.email}}
+            <br>
+            <label for="" style="font-weight: bolder;">PHONE        : </label>{{info.phone}}
+            <br>
+            <label for="" style="font-weight: bolder;">STATUS       : </label>{{info.status}}
+            <br>
+            <label for="" style="font-weight: bolder;">FEEDBACK     : </label>{{info.feedback}}
+            <br>
+            <label for="" style="font-weight: bolder;">INTERVIEWER  : </label>{{info.interviewer}}
+            <br>
+            <label for="" style="font-weight: bolder;">RATING       : </label>{{info.rating}}
+            <br>
+            <label for="" style="font-weight: bolder;">INTERVIEW SLOT: </label>
+            <br>
+            <label for="" style="font-weight: bold;">Start Time   : </label>{{info.interview_slot.starttime}}
+            <br>
+            <label for="" style="font-weight: bold;">End Time     : </label>{{info.interview_slot.endtime}}
+            <br><br>
+            <a href="/candidate/listCandidates"><button>Back</button></a>
+        </div>
+            
+        {{>footer}}
+    </body>
+</html>

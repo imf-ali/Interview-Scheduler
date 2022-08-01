@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mera App</title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <div class="main-content">
+            {{>header}}
+            <h2>{{message}}</h2>
+            <label for="" style="font-weight: bolder;">SLOT   </label>
+            <br>
+            <label for="" style="font-weight: bold;">Start Time  : </label>{{info.slot.starttime}}
+            <br>
+            <label for="" style="font-weight: bold;">End Time : </label>{{info.slot.endtime}}
+            <br><br>
+            <a href="/candidate/listCandidates"><button>Back</button></a>
+            
+        </div>
+        {{>footer}}
+    </body>
+</html>

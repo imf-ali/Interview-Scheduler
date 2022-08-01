@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mera App</title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <div class="main-content">
+        {{>header}}
+        <h2>Interviewers List</h2>
+
+        <ul>
+            {{#each candidates}}
+            <li>
+                <div class="row">
+                <label for="" style="font-weight: bolder;">NAME: </label>{{name}}
+                <br>
+                <label for="" style="font-weight: bolder;">EMAIL: </label>{{email}}
+                <br>
+                <br>
+                </div>
+                <br>
+                <br>
+            </li>
+            {{/each}}
+        </ul>
+            <br>
+            <a href="http://localhost:2000/user/ta_landing"><button type="submit">BACK</button></a>
+        </div>
+        {{>footer}}
+    </body>
+    <script src="/js/candidates/allCandidates.js"></script>
+</html>

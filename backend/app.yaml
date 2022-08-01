@@ -1,0 +1,6 @@
+runtime: nodejs16
+
+env_variables:
+  MONGO_USER : "yatharth",
+  MONGO_PASSWORD : "Micro106",
+  MONGO_DEFAULT_DATABASE : "onboardproject"
