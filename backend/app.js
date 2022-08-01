@@ -85,7 +85,7 @@ app.use((error, req, res, next) => {
 
 mongoose
   .connect(
-      `mongodb+srv://yatharth:Micro106@cluster0.xq1qx.mongodb.net/onboardproject?retryWrites=true&w=majority` 
+      process.env.MONGO_URI
   )
   .then(result => {
     const server = app.listen( 2000 , () => {
